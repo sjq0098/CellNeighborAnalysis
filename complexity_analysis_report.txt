@@ -1,0 +1,30 @@
+算法复杂度分析详细报告
+==================================================
+
+暴力搜索 分析结果:
+------------------------------
+log_log: {'slope': np.float64(1.9337094700969657), 'intercept': np.float64(-7.366180713100388), 'r_squared': np.float64(0.9967310733351726), 'complexity': 'O(n^1.93)'}
+linear: {'params': array([ 3.07214124e+01, -2.59034101e+05]), 'r_squared': np.float64(0.9513935646300805), 'formula': 'T = 3.07e+01*n + -2.59e+05'}
+nlogn: {'params': array([ 2.66962934e+00, -2.10370414e+05]), 'r_squared': np.float64(0.9622968011689411), 'formula': 'T = 2.67e+00*n*log(n) + -2.10e+05'}
+quadratic: {'params': array([ 3.10700931e-04,  1.00150132e+00, -6.85585662e+03]), 'r_squared': np.float64(0.9999015594780176), 'formula': 'T = 3.11e-04*n² + 1.00e+00*n + -6.86e+03'}
+
+最佳拟合: quadratic
+
+KD树搜索 分析结果:
+------------------------------
+log_log: {'slope': np.float64(1.0719032332068126), 'intercept': np.float64(-1.1915288542657319), 'r_squared': np.float64(0.9865294437921688), 'complexity': 'O(n^1.07)'}
+linear: {'params': array([ 8.23347199e-01, -2.76340350e+03]), 'r_squared': np.float64(0.9908065575416699), 'formula': 'T = 8.23e-01*n + -2.76e+03'}
+nlogn: {'params': array([ 7.12823158e-02, -1.37531256e+03]), 'r_squared': np.float64(0.994754026677109), 'formula': 'T = 7.13e-02*n*log(n) + -1.38e+03'}
+quadratic: {'params': array([ 3.26383087e-06,  5.11147422e-01, -1.14338426e+02]), 'r_squared': np.float64(0.9985677527846868), 'formula': 'T = 3.26e-06*n² + 5.11e-01*n + -1.14e+02'}
+
+最佳拟合: quadratic
+
+网格搜索 分析结果:
+------------------------------
+log_log: {'slope': np.float64(0.8262800100965311), 'intercept': np.float64(0.2558974354499215), 'r_squared': np.float64(0.9422089993470939), 'complexity': 'O(n^0.83)'}
+linear: {'params': array([   0.22769526, -114.5320641 ]), 'r_squared': np.float64(0.9954543191576232), 'formula': 'T = 2.28e-01*n + -1.15e+02'}
+nlogn: {'params': array([1.96918594e-02, 2.76037009e+02]), 'r_squared': np.float64(0.9972776032232332), 'formula': 'T = 1.97e-02*n*log(n) + 2.76e+02'}
+quadratic: {'params': array([4.11261757e-07, 1.88356263e-01, 2.19265684e+02]), 'r_squared': np.float64(0.9970731460082782), 'formula': 'T = 4.11e-07*n² + 1.88e-01*n + 2.19e+02'}
+
+最佳拟合: nlogn
+
